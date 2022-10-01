@@ -45,7 +45,7 @@ apt install php8.1-{mysql,cli,common,imap,ldap,xml,fpm,curl,mbstring,zip} unzip 
 
 Pour installer Composer sur Linux rien de plus simple, rendez-vous sur [le site de composer](https://getcomposer.org/download/) et utilisez les commandes à votre disposition.
 
-![](.\assets\01%20-%20Installation%20de%20Symfony%206\composer_php_cli.png)
+![](https://raw.githubusercontent.com/H4zeSt0rm/ECommerce/master/assets/01%20-%20Installation%20de%20Symfony%206/composer_php_cli.png)
 
 1. Télécharge Composer
 
