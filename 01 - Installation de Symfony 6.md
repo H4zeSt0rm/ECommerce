@@ -4,7 +4,7 @@ Lien [ICI](https://www.youtube.com/watch?v=kuKb3VfcTWE&list=PLBq3aRiVuwyzI0MT4Lh
 
 ---
 
-Pour commencer il vous faudra [PHP](https://www.php.net/downloads.php), [Composer](https://getcomposer.org/download/), [Symfony CLI](https://symfony.com/download) et [MySQL](https://dev.mysql.com/downloads/cluster/)
+Pour commencer il vous faudra [PHP](https://www.php.net/downloads.php), [Composer](https://getcomposer.org/download/), [Symfony CLI](https://symfony.com/download), [MySQL](https://dev.mysql.com/downloads/cluster/) et Git
 
 Choisissez dépendamment de votre OS
 
@@ -72,13 +72,132 @@ Pour tester l'installation faites `mysql` dans votre terminal, si avez une répo
 Maria DB [(none)]>
 ```
 
-Votre installation est un succès.
+votre installation est un succès.
+
+<h3 align="center">Git</h3>
+
+Pour installer Git rien de plus simple
+
+```shell
+apt install git-all
+```
 
 <h3 align="center"><a href="#setup-end">Continuer</a></h3>
 
 ---
 
 <h2 align="center"><a id="setup-windows">Windows</a></h2>
+
+Pour installer PHP, Composer et Symfony sur Windows, ce n'est pas compliqué nous allons récupérer les "binaries". Pour MySQL c'est une autre histoire.
+
+Pour commencer allez dans `Documents` et faites un dossier `CLIs` ça seras important pour plus tard.
+
+<h3 align="center">PHP</h3>
+
+Pour PHP rendez vous sur [le site de PHP](https://www.php.net/downloads.php) pour récupérer les "binaries". Cliquez sur 
+
+![](./assets/01%20-%20Installation%20de%20Symfony%206/php_win_downloads.png)
+
+Téléchargez le fichier zip
+
+![](./assets/01%20-%20Installation%20de%20Symfony%206/php_chose_zip.png)
+
+Quand le zip est téléchargé extrayez le dans un dossier `php<votre_version>`
+
+Ouvrez ensuite une **nouvelle** `Invite de commande`
+
+`Win+R -> cmd`
+
+```shell
+set PATH=%PATH%;%userprofile%\Documents\CLIs\php<votre_version>\
+```
+
+<h3 align="center">Composer</h3>
+
+Pour composer vous avez deux choix:
+
+- L'installer avec `Composer-Setup.exe`
+
+- Installer les `binaries`
+
+Dans les deux cas vous devez aller sur [le site de composer](https://getcomposer.org/download/)
+
+Si vous voulez `Composer-Setup.exe` continuez ici, sinon allez [ici](#use_composer_binaries).
+
+Vous avez un lien vers `Composer-Setup.exe`
+
+![](./assets/01%20-%20Installation%20de%20Symfony%206/composer_setup_exe.png)
+
+Pendant l'installation il vous seras demandé la position de PHP, renseignez le dossier fait précédemment.
+
+Si vous avez l'erreur suivante il faudra installer des bibliothèques Microsoft supplémentaires.
+
+![erreur_composer_setup_lib.jpg](./assets/01%20-%20Installation%20de%20Symfony%206/erreur_composer_setup_lib.jpg)
+
+Vous pouvez installer la bibliothèque nécessaire [ici](https://visualstudio.microsoft.com/fr/downloads/)
+
+![erreur_composer_setup_where_lib.jpg](./assets/01%20-%20Installation%20de%20Symfony%206/erreur_composer_setup_where_lib.jpg)
+
+Quand le téléchargement est fini, vous n'avez plus qu'à installer.
+
+![microsoft_visual_c++_installeur.jpg](./assets/01%20-%20Installation%20de%20Symfony%206/microsoft_visual_c++_installeur.jpg)
+
+<a id="use_composer_binaries"></a>
+
+Si vous voulez les `binaries` vous pouvez descendre plus bas sur la page jusqu'à `Manual Download`. Prenez `Latest Stable`
+
+![](./assets/01%20-%20Installation%20de%20Symfony%206/composer_binaries.png)
+
+Vous aurez un `composer.phar`. Faites un dossier `composer` dans le dossier`CLIs` précédemment créé et mettez `composer.phar` à l'intérieur.
+
+Vous allez devoir faire un autre fichier dans ce dossier. `composer.bat`, vous allez écrire  le texte ci-dessous à l'intérieur
+
+```batch
+@php "%~dp0composer.phar" %*
+```
+
+Faites ensuite comme pour PHP. Ouvrez une **nouvelle** `Invite de commande` et faites la commande suivante.
+
+```shell
+set PATH=%PATH%;%userprofile%\Documents\CLIs\composer\
+```
+
+<h3 align="center">Symfony CLI</h3>
+
+Pour Symfony CLI vous devez allez sur [le site de Symfony](https://symfony.com/download) et choisir Windows.
+
+N'installez pas Scoop, c'est une perte de temps. Prenez plutôt les `binaries`. Choisissez `amd64`, une fois le zip téléchargé, comme pour PHP et Composer, faites un dossier dans `CLIs` nommez le `symfony_cli` et mettez le `symfony.exe` présent dans le zip dans le dossier.
+
+Ouvrez ensuite une **nouvelle** `Invite de commande`. Et exécutez cette commande.
+
+```shell
+set PATH=%PATH%;%userprofile%\Documents\CLIs\symfony_cli\
+```
+
+<h3 align="center">MySQL</h3>
+
+Pour MySQL des gens proposent d'utiliser Xamp, Wamp ou Mamp mais ces dernières peuvent poser des problèmes, nous allons donc installer directement MySQL.
+
+Les explications étant tellement grandes, je vous redirige sur mon tuto pour installer [MySQL sur Windows](https://github.com/H4zeSt0rm/CoursPHP/blob/master/Installer%20MySQL%20sur%20Windows.md).
+
+<h3 align="center">Git</h3>
+
+Pour installer Git il faut juste aller sur [le site de Git](https://git-scm.com/download/win)
+
+![](./assets/01%20-%20Installation%20de%20Symfony%206/git_homepage.png)
+
+Choisissez dépendamment de votre ordinateur. `Standalone` étant une version installé sur votre ordinateur et `Portable` comme son nom l'indique est une version installable sur une clé USB ou un disque dur.
+
+Vous pouvez laisser les paramètres par défaut pour l'installation.
+
+Une fois l'installation faite première chose à faire sont les commandes ci-dessous
+
+```shell
+git config --global user.name "Votre Pseudonyme Github"
+git config --global user.email "Votre Email Github"
+```
+
+<h3 align="center"><a href="#setup-end">Continuer</a></h3>
 
 ---
 
