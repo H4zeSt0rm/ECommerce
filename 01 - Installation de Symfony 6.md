@@ -206,3 +206,15 @@ git config --global user.email "Votre Email Github"
 ---
 
 <h2 align="center"><a id="setup-end">Après l'installation</a></h2>
+
+Vous pouvez maintenant initialiser un projet Symfony, je vous conseil de faire un dossier dans `Documents` que vous pouvez appeler `Projets Symfony`.
+
+Ouvrez ensuite une `Invite de commande` dans le dossier et faites la commande suivante.
+
+```shell
+symfony new ecommerce_sf6 --version="6.0.*" --webapp
+```
+
+Nous utiliserons la version 6.0.* de Symfony pour ne avoir la même version que dans le tuto vidéo.
+
+<h1 align="center">Fin</h1>
