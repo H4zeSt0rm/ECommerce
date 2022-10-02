@@ -92,6 +92,8 @@ Pour installer PHP, Composer et Symfony sur Windows, ce n'est pas compliqué nou
 
 Pour commencer allez dans `Documents` et faites un dossier `CLIs` ça seras important pour plus tard.
 
+Vous allez avoir besoin d'une fenêtre spéciale pour de futures manipulation, pour l'ouvrir faites: `Win+R`, écrivez `SystemPropertiesAdvanced` et faites entrer. Cliquez sur `Variables d'environnement...`, dans la partie du dessus cherchez `Path` en nom de variable. Faites `Modifier` et gardez cette fenêtre ouverte nous en aurons besoin plus tard.
+
 <h3 align="center">PHP</h3>
 
 Pour PHP rendez vous sur [le site de PHP](https://www.php.net/downloads.php) pour récupérer les "binaries". Cliquez sur 
@@ -104,12 +106,10 @@ Téléchargez le fichier zip
 
 Quand le zip est téléchargé extrayez le dans un dossier `php<votre_version>`
 
-Ouvrez ensuite une **nouvelle** `Invite de commande`
-
-`Win+R -> cmd`
+Allez sur la fenêtre `Variables d'environnements...` et faites `Nouveau` et écrivez la ligne ci-dessous:
 
 ```shell
-set PATH=%PATH%;%userprofile%\Documents\CLIs\php<votre_version>\
+%userprofile%\Documents\CLIs\php<votre_version>\
 ```
 
 <h3 align="center">Composer</h3>
@@ -158,8 +158,10 @@ Vous allez devoir faire un autre fichier dans ce dossier. `composer.bat`, vous a
 
 Faites ensuite comme pour PHP. Ouvrez une **nouvelle** `Invite de commande` et faites la commande suivante.
 
+Allez sur la fenêtre `Variables d'environnements...` et faites `Nouveau` et écrivez la ligne ci-dessous:
+
 ```shell
-set PATH=%PATH%;%userprofile%\Documents\CLIs\composer\
+%userprofile%\Documents\CLIs\composer\
 ```
 
 <h3 align="center">Symfony CLI</h3>
@@ -170,8 +172,10 @@ N'installez pas Scoop, c'est une perte de temps. Prenez plutôt les `binaries`. 
 
 Ouvrez ensuite une **nouvelle** `Invite de commande`. Et exécutez cette commande.
 
+Allez sur la fenêtre `Variables d'environnements...` et faites `Nouveau` et écrivez la ligne ci-dessous:
+
 ```shell
-set PATH=%PATH%;%userprofile%\Documents\CLIs\symfony_cli\
+%userprofile%\Documents\CLIs\symfony_cli\
 ```
 
 <h3 align="center">MySQL</h3>
@@ -179,6 +183,22 @@ set PATH=%PATH%;%userprofile%\Documents\CLIs\symfony_cli\
 Pour MySQL des gens proposent d'utiliser Xamp, Wamp ou Mamp mais ces dernières peuvent poser des problèmes, nous allons donc installer directement MySQL.
 
 Les explications étant tellement grandes, je vous redirige sur mon tuto pour installer [MySQL sur Windows](https://github.com/H4zeSt0rm/CoursPHP/blob/master/Installer%20MySQL%20sur%20Windows.md).
+
+Une fois l'installation terminée, si vous avez besoin de la commande `mysql` dans vos `Invites de commandes` et que vous n'avez pas touché au dossier d'installation de MySQL.
+
+Allez dans le dossier suivant:
+
+```
+C:\Program Files\MySQL\
+```
+
+Récupérez le nom du dossier commençant par `MySQL Server`.
+
+Allez sur la fenêtre `Variables d'environnements...` et faites `Nouveau` et écrivez la ligne ci-dessous:
+
+```
+C:\Program Files\MySQL\MySQL Server ?\bin
+```
 
 <h3 align="center">Git</h3>
 
