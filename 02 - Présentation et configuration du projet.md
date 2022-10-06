@@ -34,9 +34,7 @@ Avant tout, il faut cloner le `.env` dans votre dossier, renommez la copie `.env
 
 Pour lier le site à MySQL si vous avez suivis le dernier tuto, vous devez chercher la ligne  
 
-`DATABASE_URL="mysql:`, retirez le **#** au début  et ajoutez un **#** au début de la ligne 
-
-`# DATABASE_URL="postgresql:` l'URL pour MySQL est composé comme ceci
+`DATABASE_URL="mysql:`, retirez le **#** au début  et ajoutez un **#** au début de la ligne `# DATABASE_URL="postgresql:` l'URL pour MySQL est composé comme ceci
 
 ![](.\assets\02%20-%20Présentation%20et%20configuration%20du%20projet/explication_databaseurl.png)
 
