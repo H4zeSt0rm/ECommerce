@@ -8,7 +8,7 @@ Lien [ICI](https://www.youtube.com/watch?v=kpSYFMV4eJc&list=PLBq3aRiVuwyzI0MT4Lh
 
 <img src=".\assets\02%20-%20Présentation%20et%20configuration%20du%20projet\database_diagram.png" title="" alt="" width="722">
 
-Première chose à faire après avoir créer un projet, c'est de ce déplacer à l'intérieur
+Première chose à faire après avoir créé un projet, c'est de se déplacer à l'intérieur
 
 ```shell
 cd ecommerce_sf6
@@ -50,8 +50,8 @@ Pour lier le site à MySQL si vous avez suivis le dernier tuto, vous devez cherc
 
 Vous allez devoir changer les valeurs selon vos besoins
 
-Blue et Vert sont les valeurs que vous avez définis à l'initialisation de MySQL
+Bleu et Vert sont les valeurs que vous avez définies à l'initialisation de MySQL
 
-Cyan je vous conseil de mettre `ecommerce_sf6` comme nom de base de donnée
+Cyan je vous conseille de mettre `ecommerce_sf6` comme nom de base de donnée
 
 ---
