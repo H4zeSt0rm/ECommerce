@@ -44,7 +44,7 @@ symfony serve -d # -d permet de lancer le site et de garder contrôle du shell
 
 et que vous vous rendez dessus vous verrez une page de Bienvenue
 
-![](.\assets\04%20-%20Mise%20en%20place%20des%20templates%20et%20des%20assets%20CSS%20et%20JS\main_controller.png)
+<img src=".\assets\04%20-%20Mise%20en%20place%20des%20templates%20et%20des%20assets%20CSS%20et%20JS\main_controller.png" title="" alt="" width="722">
 
 Si vous retirez 
 
