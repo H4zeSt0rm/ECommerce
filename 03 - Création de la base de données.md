@@ -208,8 +208,6 @@ symfony console make:entity
 
 -  
 
--  
-
 - coupons_types
 
 - relation
