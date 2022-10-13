@@ -154,6 +154,8 @@ symfony console make:entity
 
 -  
 
+-  
+
 <h2 align="center">Créer les Coupons</h2>
 
 ```shell
@@ -223,6 +225,7 @@ symfony console make:entity
 - yes
 
 -  
+
 
 Après avoir fini, allez dans l'entité `Coupons.php` dans `/src/Entity/Coupons.php`
 
@@ -296,7 +299,7 @@ symfony console make:entity
 
 -  
 
-Après avoir fini, allez dans l'entité `Products.php` dans `/src/Entity/Coupons.php`
+Après avoir fini, allez dans l'entité `Products.php` dans `/src/Entity/Products.php`
 
 Comme pour la classe Users.php modifiez la ligne au-dessus de `private $created_at`
 
