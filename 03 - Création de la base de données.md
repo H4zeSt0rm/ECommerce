@@ -97,13 +97,13 @@ Après avoir fini, allez dans l'entité Users.php dans /src/Entity/Users.php
 Allez sur la ligne au-dessus de `private $created_at`
 
 ```php
-#[ORM\Column(type: ('datetime_immutable')]
+#[ORM\Column(type: 'datetime_immutable')]
 ```
 
 Modifiez la ligne du dessus en ça
 
 ```php
-#[ORM\Column(type: ('datetime_immutable', options: ['default' => 'CURRENT_TIMESTAMP'])]
+#[ORM\Column(type: 'datetime_immutable', options: ['default' => 'CURRENT_TIMESTAMP'])]
 ```
 
 <h2 align="center">Créer les Catégories</h2>
