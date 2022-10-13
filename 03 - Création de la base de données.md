@@ -229,13 +229,13 @@ Après avoir fini, allez dans l'entité `Coupons.php` dans `/src/Entity/Coupons.
 Allez sur la ligne au-dessus de `private $code;`
 
 ```php
-#[ORM\Column(type: ('string', length: 10)]
+#[ORM\Column(type: 'string', length: 10)]
 ```
 
 Et modifiez la en
 
 ```php
-#[ORM\Column(type: ('string', length: 10, unique: true)]
+#[ORM\Column(type: 'string', length: 10, unique: true)]
 ```
 
 Et comme pour la classe Users.php modifiez la ligne au-dessus de  `private $created_at`
@@ -393,13 +393,13 @@ Après avoir fini, allez dans l'entité `Orders.php` dans `/src/Entity/Orders.ph
 Allez sur la ligne au-dessus de `private $reference;`
 
 ```php
-#[ORM\Column(type: ('string', length: 20)]
+#[ORM\Column(type: 'string', length: 20)]
 ```
 
 Et modifiez la en
 
 ```php
-#[ORM\Column(type: ('string', length: 20, unique: true)]
+#[ORM\Column(type: 'string', length: 20, unique: true)]
 ```
 
 <h2 align="center">Créer les Details de commandes</h2>
