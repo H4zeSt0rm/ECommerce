@@ -21,7 +21,7 @@ Car nous n'allons pas avoir besoin de ce dernier.
 Pour faire notre contrôleur d'accueil nous devons faire
 
 ```shell
-symfony console make:controlleur MainController
+symfony console make:controller MainController
 ```
 
 Vous avez maintenant un fichier `/src/Controller/MainController.php` et `/templates/main/index.html.twig`
