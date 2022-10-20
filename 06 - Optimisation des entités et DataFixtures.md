@@ -237,7 +237,7 @@ for ($usr = 1; $usr <= 5; $usr++) {
     $user->setZipcode(str_replace(' ','',$faker->postcode));
     $user->setCity($faker->city);
     $user->setPassword(
-        $this->passwordHasher->hashPassword($user,'secret')
+        $this->passwordEncoder->hashPassword($user,'secret')
     );    
     $manager->persist($user);
 }
