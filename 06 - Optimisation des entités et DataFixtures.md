@@ -132,7 +132,7 @@ Nous pouvons maintenant commencer à générer nos données, dans un premier tem
 ```php
 private $counter = 1;
 
-public function __constructor(private SluggerInterface $slugger){}
+public function __construct(private SluggerInterface $slugger){}
 ```
 
 Pour nous faciliter la tâche et pour ne pas remettre plusieurs fois les mêmes lignes de code nous allons ajouter une autre fonction
