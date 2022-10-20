@@ -99,6 +99,15 @@ Nous allons ajouter à `Categories` et `Products`
 use SlugTrait;
 ```
 
+et faire un 
+
+```shell
+symfony console m:migr
+symfony console d:m:m
+```
+
+pour ajouter slug au entités de la base de donnnée
+
 ---
 
 <h2 align="center">DataFixtures</h2>
