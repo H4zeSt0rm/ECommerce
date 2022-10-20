@@ -151,7 +151,7 @@ Il va falloir ajouter une ligne dans `/src/Entity/Users.php` .
 Dans la fonction `__construct()` ajoutez cette ligne
 
 ```php
-$this->created_at = new \DataTimeImmutable();
+$this->created_at = new \DateTimeImmutable();
 ```
 
 Cela permettra d'éviter une date de création null à l'inscription.
