@@ -52,7 +52,7 @@ class ...
 
 *Si vous n'avez pas IntelliPhense pensez à ajouter la dépendance dans chaque fichier*
 
-Juste après namespace ajoutez `use App\Entity\Trait\SlugTrait`
+Juste après namespace ajoutez `use App\Entity\Trait\CreatedAtTrait`
 
 
 
