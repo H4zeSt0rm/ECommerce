@@ -135,9 +135,9 @@ Nous allons leurs ajouter `TextType::class` nous allons ensuite ajouter à tout 
 ```php
 , [
     'attr' => [
-        'class' => 'form-control',
-        'label' => '!DEPEND DE L OBJET!'
-    ]
+        'class' => 'form-control'
+    ],
+    'label' => '!DEPEND DE L OBJET!'
 ]
 ```
 
