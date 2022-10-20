@@ -207,7 +207,7 @@ D'abords ajouter un constructeur
 public function __construct(private UserPasswordHasherInterface $passwordEncoder, private SluggerInterface $slugger){}
 ```
 
-Et maintenant la fonction load
+Et maintenant la fonction load, *si vous avez une erreur il sur Faker\Factory ajoutez `use Faker;` en haut après `namespace`*
 
 ```php
 $admin = new Users();
