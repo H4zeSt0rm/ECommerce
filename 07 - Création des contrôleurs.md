@@ -14,9 +14,9 @@ symfony console make:controller ProfileController
 
 Allez ensuite dans `/src/Controller/ProfileController.php`
 
-Modifiez le `#[Route('/profile', name: 'app_profile')]` en `#[Route('/', name: 'index')]`
+Modifiez `#[Route('/profile', name: 'app_profile')]` en `#[Route('/', name: 'index')]`
 
-Et ajoutez `#[Route('/profil', name: 'profile_')]` au dessus de `class ProfileController extends AbstractController`
+Et ajoutez `#[Route('/profil', name: 'profile_')]` au-dessus de `class ProfileController extends AbstractController`
 
 Nous allons ajouter une nouvelle Route
 
@@ -36,7 +36,7 @@ public function orders(): Response
 symfony console make:controller ProductsController
 ```
 
-Et comme pour `ProfileController` nous allons mettre `#[Route('/products', name: 'products_')]` au dessus de `class ProductsController extends AbstractController` et modifions l'annotation au dessus d'`index()` en `#[Route('/', name: 'index')]` et pensez à supprimer les variables dans `render`
+Et comme pour `ProfileController` nous allons mettre `#[Route('/products', name: 'products_')]` au-dessus de `class ProductsController extends AbstractController` et modifions l'annotation au-dessus d'`index()` en `#[Route('/', name: 'index')]` et pensez à supprimer les variables dans `render`
 
 ```php
 , [
@@ -69,7 +69,7 @@ public function details(?Products $product): Response
 }
 ```
 
-Dupliquez `templates/products/index.html.twig` en `templates/products/details.html.twig` et modifiez le comme ceci
+Dupliquez `templates/products/index.html.twig` en `templates/products/details.html.twig` et modifiez-le comme ceci
 
 ```twig
 {% extends 'base.html.twig' %}
@@ -112,5 +112,3 @@ Et modifiez le fichier `templates/admin/users/index.html.twig` en
     <h1>Administration des utilisateurs</h1>
 {% endblock %}
 ```
-
-
